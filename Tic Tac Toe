@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>
+        <title>
+          #text: Tic Tac Toe
+          <body>
+            <table>
+               <tbody>
+               <tr>
+                <td id="1">
+                    #text:
+                <td id="2">
+                    #text:
+                <td id="3">
+                    #text:
+               <tr>
+                <td id="4">
+                    #text:
+                <td id="5">
+                    #text:
+                <td id="6">
+                    #text:
+              <tr>
+                <td id="7">
+                    #text:
+                <td id="8">
+                    #text:
+                <td id="9">
+                    #text:
+
