@@ -1,45 +1,79 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
-    
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="game.css" type="text/css" media="screen" charset="utf-8">
+    </head>
+
     <body>
-    <div id="tic-tac-toe">
-<div class="span3 new_span">
-<div class="row">
-<h1 class="span3">Tic Tac Toe</h1>
-<div class="span3">
-<div class="input-prepend input-append">
-    <span class="add-on win_text">O won</span><strong id="o_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
-    </div>
-    <div class="input-prepend input-append">
-    <span class="add-on win_text">X won</span><strong id="x_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
-    </div>
-      
-</div>
+        <h1>Tic Tac Toe</h1>
+        <table id="board" class="board">
+            <tr>
+                <td id="one" class="even"></td>
+                <td id="two"></td>
+                <td id="three" class="even"></td>
+            </tr>
+            <tr>
+                <td id="four"></td>
+                <td id="five" class="even"></td>
+                <td id="six"></td>
+            </tr>
+            <tr>
+                <td id="seven" class="even"></td>
+                <td id="eight"></td>
+                <td id="nine" class="even"></td>
+            </tr>
+        </table>
 
+        <table id="anotherBoard" class="board">
+            <tr>
+                <td id="one" class="even"></td>
+                <td id="two"></td>
+                <td id="three" class="even"></td>
+            </tr>
+            <tr>
+                <td id="four"></td>
+                <td id="five" class="even"></td>
+                <td id="six"></td>
+            </tr>
+            <tr>
+                <td id="seven" class="even"></td>
+                <td id="eight"></td>
+                <td id="nine" class="even"></td>
+            </tr>
+        </table>
 
-    
-</div>
-<ul class="row" id="game">
-<li id="one" class="btn span1" >+</li>
-<li id="two" class="btn span1">+</li>
-<li id="three" class="btn span1">+</li>
-<li id="four" class="btn span1">+</li>
-<li id="five" class="btn span1">+</li>
-<li id="six" class="btn span1">+</li>
-<li id="seven" class="btn span1">+</li>
-<li id="eight" class="btn span1">+</li>
-<li id="nine" class="btn span1">+</li>
-</ul>
-<div class="clr">&nbsp;</div>
-<div class="row"><a href="#" id="reset" class="btn-success btn span3" >Restart</a></div></div>
-</div>
+        <table id="thirdBoard" class="board">
+            <tr>
+                <td id="one" class="even"></td>
+                <td id="two"></td>
+                <td id="three" class="even"></td>
+            </tr>
+            <tr>
+                <td id="four"></td>
+                <td id="five" class="even"></td>
+                <td id="six"></td>
+            </tr>
+            <tr>
+                <td id="seven" class="even"></td>
+                <td id="eight"></td>
+                <td id="nine" class="even"></td>
+            </tr>
+        </table>
+        <script src="http://code.jquery.com/jquery-1.5.1.js" type="text/javascript" charset="utf-8"></script>
+        <script src="jquery.tictac.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(function() {
+                $("#board, #anotherBoard").tictac().css("border", "1px solid #CC0000");
+                //$("#anotherBoard").tictac().css("border", "1px solid #00CC00");
+                var thirdBoard = $("#thirdBoard").tictac();
+                thirdBoard.css("border", "1px solid #0000CC");
+            });
+        </script>
         <br>
-        <b> i tried :c
+        <b>I tried :c
+    
+    
     </body>
-</head>
 </html>
