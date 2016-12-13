@@ -1,16 +1,22 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <textarea> 
- document.createElement("ul")   
+  <head>
+  </head>
+  <body>
+    <textarea rows="10" cols="80" id="inputText"></textarea>
+    <button onclick="testHTML();">Hi.</button>
+    <ul id="text" style="color:red; font-size:30px;"><li>Purchase video games</li></ul>
+    <script>
+      function testHTML() {
+      var userInput = document.getElementById("inputText");
+      var span = document.getElementById("text");
+      var list = document.createElement("li");
+      list.textContent = userInput.value;
+      span.appendChild(list);
+      }
+    </script>
+  </body>
+</html>
      
     
     
