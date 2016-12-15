@@ -191,7 +191,7 @@ function ballMove(){
     }
     if(ball.getY()+BALL_RADIUS>getHeight()){
         stopTimer(ballMove);
-        var loseMessage = new Text("Wow");
+        var loseMessage = new Text("Nice try :(");
         loseMessage.setPosition(getWidth()/2-100,getHeight()/2);
         loseMessage.setColor(Color.red);
         add(loseMessage);
